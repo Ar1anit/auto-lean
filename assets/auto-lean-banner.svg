@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="1200" height="320" role="img" aria-labelledby="title description">
+  <title id="title">auto-lean · Formale Verifikation mit Lean 4</title>
+  <desc id="description">Kreis, Quadrat und Raute laufen auf drei farbigen Bahnen. Nach zwei Umkehrungen stehen sie wieder in der ursprünglichen Reihenfolge.</desc>
+  <defs>
+    <linearGradient id="ink" x2="1" y2=".3">
+      <stop stop-color="#101d2b"/>
+      <stop offset="1" stop-color="#163338"/>
+    </linearGradient>
+    <pattern id="paper" width="16" height="16" patternUnits="userSpaceOnUse">
+      <circle cx="8" cy="8" r=".85" fill="#acc8bf" opacity=".23"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="320" rx="16" fill="url(#ink)"/>
+  <rect x="640" y="16" width="544" height="288" rx="10" fill="url(#paper)"/>
+  <g font-family="Menlo, Consolas, monospace">
+    <path d="M56 55h34" stroke="#7be2bb" stroke-width="3"/>
+    <text x="106" y="61" font-size="17" letter-spacing="2" fill="#a5dbc9">FORMALE VERIFIKATION / LEAN 4</text>
+    <text x="52" y="184" font-family="Georgia, 'Times New Roman', serif" font-size="112" letter-spacing="-4" fill="#fff3da">auto-lean</text>
+    <text x="58" y="249" font-size="25" fill="#c7dad7">myRev (myRev xs) = xs</text>
+  </g>
+  <g transform="translate(738 70)">
+    <g stroke="#698b87" opacity=".5" stroke-dasharray="2 6">
+      <path d="M0 -24V166M176 -24V166M352 -24V166"/>
+    </g>
+    <g fill="none" stroke-width="4">
+      <path d="M0 72H352" stroke="#eac984"/>
+      <path d="M0 144C88 144 88 0 176 0S264 144 352 144" stroke="#afadf8"/>
+      <path d="M0 0C88 0 88 144 176 144S264 0 352 0" stroke="#183238" stroke-width="12"/>
+      <path d="M0 0C88 0 88 144 176 144S264 0 352 0" stroke="#7be2bb"/>
+    </g>
+    <g stroke="#162d34" stroke-width="4">
+      <g fill="#7be2bb">
+        <circle r="13"/><circle cx="176" cy="144" r="13"/><circle cx="352" r="13"/>
+      </g>
+      <g fill="#eac984">
+        <rect x="-11" y="61" width="22" height="22" rx="3"/>
+        <rect x="165" y="61" width="22" height="22" rx="3"/>
+        <rect x="341" y="61" width="22" height="22" rx="3"/>
+      </g>
+      <g fill="#afadf8">
+        <path d="M0 129l15 15-15 15-15-15zM176 -15l15 15-15 15-15-15zM352 129l15 15-15 15-15-15z"/>
+      </g>
+    </g>
+    <g fill="#d5e4dc" font-family="Menlo, Consolas, monospace" font-size="18" text-anchor="middle">
+      <text y="194">xs</text><text x="176" y="194">myRev xs</text><text x="352" y="194">= xs</text>
+    </g>
+  </g>
+</svg>
