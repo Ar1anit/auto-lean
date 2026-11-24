@@ -1,0 +1,32 @@
+[package]
+name = "auto-lean"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.85"
+description = "Autonomously prove Lean 4 theorems and formally verify pure Python/Rust functions with an LLM-driven compiler-feedback loop"
+readme = "README.md"
+keywords = ["lean4", "theorem-proving", "formal-verification", "llm", "cli"]
+categories = ["command-line-utilities", "development-tools", "mathematics"]
+# `examples/` holds Lean / Python / Rust *inputs* for the tool, not Cargo example
+# targets. Without this, Cargo would try to compile `examples/*.rs` as binaries.
+autoexamples = false
+
+[lib]
+name = "auto_lean"
+path = "src/lib.rs"
+
+[[bin]]
+name = "auto-lean"
+path = "src/main.rs"
+
+[dependencies]
+anyhow = "1"
+async-trait = "0.1"
+clap = { version = "4", features = ["derive"] }
+console = "0.16"
+regex = "1"
+reqwest = { version = "0.12", default-features = false, features = ["json", "rustls-tls"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+thiserror = "2"
+tokio = { version = "1", features = ["full"] }
