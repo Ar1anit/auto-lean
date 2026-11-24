@@ -5,6 +5,7 @@ edition = "2024"
 rust-version = "1.85"
 description = "Autonomously prove Lean 4 theorems and formally verify pure Python/Rust functions with an LLM-driven compiler-feedback loop"
 readme = "README.md"
+license = "MIT"
 keywords = ["lean4", "theorem-proving", "formal-verification", "llm", "cli"]
 categories = ["command-line-utilities", "development-tools", "mathematics"]
 # `examples/` holds Lean / Python / Rust *inputs* for the tool, not Cargo example

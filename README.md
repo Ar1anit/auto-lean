@@ -10,6 +10,8 @@ compiles the rest with your local `lean`, and feeds the compiler's exact
 diagnostics back until the proof checks or the attempts run out. Nothing counts
 as proven until Lean's kernel has accepted it on your machine.
 
+Licensed under the [MIT License](LICENSE).
+
 | Command | What it does |
 | --- | --- |
 | `auto-lean solve <file.lean>` | **Mode 1.** Fills in every `sorry` of a Lean file. |
